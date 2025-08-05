@@ -1,0 +1,142 @@
+/* BuyActionWindow.css */
+
+/* Container styling */
+#buy-window.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 320px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  padding: 20px;
+  border: 1px solid #e1e4e8;
+}
+
+/* Header styling */
+#buy-window .window-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eaecef;
+  margin-bottom: 20px;
+}
+
+#buy-window .window-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+/* Input fields styling */
+#buy-window .regular-order {
+  margin-bottom: 20px;
+}
+
+#buy-window .inputs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+#buy-window fieldset {
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 5px 10px;
+  flex: 1;
+  margin: 0;
+}
+
+#buy-window legend {
+  font-size: 12px;
+  color: #718096;
+  padding: 0 5px;
+}
+
+#buy-window input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 8px 5px;
+  color: #1a202c;
+  background: transparent;
+}
+
+#buy-window input:focus {
+  outline: none;
+}
+
+/* Buttons styling */
+#buy-window .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+  border-top: 1px solid #eaecef;
+}
+
+#buy-window .buttons span {
+  font-size: 14px;
+  color: #4a5568;
+  font-weight: 500;
+}
+
+#buy-window .buttons div {
+  display: flex;
+  gap: 10px;
+}
+
+#buy-window .btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+#buy-window .btn-blue {
+  background-color: #3182ce;
+  color: white;
+  border: 1px solid #3182ce;
+}
+
+#buy-window .btn-blue:hover {
+  background-color: #2c5282;
+  border-color: #2c5282;
+}
+
+#buy-window .btn-grey {
+  background-color: #ffffff;
+  color: #4a5568;
+  border: 1px solid #e2e8f0;
+}
+
+#buy-window .btn-grey:hover {
+  background-color: #f7fafc;
+  border-color: #cbd5e0;
+}
+
+/* Dragging handle (if needed) */
+#buy-window[draggable="true"] {
+  cursor: move;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  #buy-window.container {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  #buy-window .inputs {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
