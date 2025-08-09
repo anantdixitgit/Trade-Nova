@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const verifyJWT = require("../Middlewares/verifyUser.Middleware.js");
+const verifyJWT = require("../Middlewares/verifyUser.middleware.js");
 const {
   signup,
   login,
