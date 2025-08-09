@@ -1,7 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { useNavigate } from "react-router-dom";
 
 function OpenAccount() {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/signup");
+  };
   return (
     <div className="container  p-5 mb-5">
       <div className="row text-center">
@@ -10,6 +15,7 @@ function OpenAccount() {
           Mordern platform and apps ,₹0 intrest and ₹20 intraday & F&O trades .
         </p>
         <button
+          onClick={handleClick}
           style={{ width: "25%", margin: "0 auto" }}
           type="button"
           className="btn btn-primary p-2 fs-5"
