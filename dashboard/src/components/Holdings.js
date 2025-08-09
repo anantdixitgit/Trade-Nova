@@ -12,7 +12,7 @@ const Holdings = () => {
     const fetchHoldings = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/holdings/allholdings",
+          "https://trade-nova-backend.onrender.com/api/holdings/allholdings",
           {
             signal,
           }

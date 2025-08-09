@@ -9,7 +9,7 @@ const BuyActionWindow = ({ uid }) => {
   const [stockPrice, setStockPrice] = useState(0.0);
 
   const handleBuyClick = () => {
-    axios.post("http://localhost:3002/api/newOrder", {
+    axios.post("https://trade-nova-backend.onrender.com/api/newOrder", {
       name: uid,
       qty: stockQuantity,
       price: stockPrice,

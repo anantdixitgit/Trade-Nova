@@ -12,7 +12,7 @@ const Positions = () => {
     const fetchPosition = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/positions/allpositions",
+          "https://trade-nova-backend.onrender.com/api/positions/allpositions",
           {
             signal,
           }
