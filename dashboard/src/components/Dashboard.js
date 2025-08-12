@@ -21,12 +21,12 @@ const Dashboard = () => {
       <div className="content">
         <Routes>
           <Route exact path="/" element={<Summary />} />
-          <Route path="/api/orders" element={<Orders />} />
-          <Route path="/api/holdings" element={<Holdings />} />
-          <Route path="/api/positions" element={<Positions />} />
-          <Route path="/api/funds" element={<Funds />} />
-          <Route path="/api/apps" element={<Apps />} />
-          <Route path="/api/SignUp" element={<Signup />} />
+          <Route path="/orders" element={<Orders />} />
+          <Route path="/holdings" element={<Holdings />} />
+          <Route path="/positions" element={<Positions />} />
+          <Route path="/funds" element={<Funds />} />
+          <Route path="/apps" element={<Apps />} />
+          <Route path="/SignUp" element={<Signup />} />
         </Routes>
       </div>
     </div>

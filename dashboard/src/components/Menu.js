@@ -36,7 +36,7 @@ const Menu = () => {
 
           <li>
             <Link
-              to="/api/orders"
+              to="/orders"
               className={selectedMenu === 1 ? activeMenuClass : menuClass}
               style={{ textDecoration: "none" }}
               onClick={() => handleMenuClick(1)}
@@ -46,7 +46,7 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              to="/api/holdings"
+              to="/holdings"
               className={selectedMenu === 2 ? activeMenuClass : menuClass}
               style={{ textDecoration: "none" }}
               onClick={() => handleMenuClick(2)}
@@ -56,7 +56,7 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              to="/api/positions"
+              to="/positions"
               className={selectedMenu === 3 ? activeMenuClass : menuClass}
               style={{ textDecoration: "none" }}
               onClick={() => handleMenuClick(3)}
@@ -66,7 +66,7 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              to="/api/funds"
+              to="/funds"
               className={selectedMenu === 4 ? activeMenuClass : menuClass}
               style={{ textDecoration: "none" }}
               onClick={() => handleMenuClick(4)}
@@ -76,7 +76,7 @@ const Menu = () => {
           </li>
           <li>
             <Link
-              to="/api/apps"
+              to="/apps"
               className={selectedMenu === 5 ? activeMenuClass : menuClass}
               style={{ textDecoration: "none" }}
             >
@@ -97,7 +97,7 @@ const Menu = () => {
           </button>
           <ul class="dropdown-menu">
             <li>
-              <Link className="dropdown-item" to="/api/SignUp">
+              <Link className="dropdown-item" to="/SignUp">
                 Signup
               </Link>
             </li>
