@@ -22,15 +22,9 @@ const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 5000;
 // const url = process.env.MONGO_URL1;
 
-const allowOrigns = ["http://localhost:3000", "http://localhost:3001"];
+//const allowOrigns = ["http://localhost:3000", "http://localhost:3001"];
 
-app.use(
-  cors({
-    origin: allowOrigns,
-    credentials: true, // Allow credentials (cookies, authorization headers, etc.)
-    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  })
-);
+app.use(cors());
 
 // Enable CORS for all routes
 app.use(bodyParser.json());
