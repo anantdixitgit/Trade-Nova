@@ -41,12 +41,15 @@ function Signup() {
       alert("Passwords do not match!");
       return;
     }
-    const response = await axios.post("http://localhost:5000/api/user/signup", {
-      username: formData.username,
-      email: formData.email,
-      phone: formData.phone,
-      password: formData.password,
-    });
+    const response = await axios.post(
+      "https://trade-nova-backend.onrender.com/api/user/signup",
+      {
+        username: formData.username,
+        email: formData.email,
+        phone: formData.phone,
+        password: formData.password,
+      }
+    );
 
     const res_data = response.data;
 
