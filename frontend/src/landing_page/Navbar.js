@@ -77,7 +77,10 @@ function Navbar() {
 
               {isLoggedIn ? (
                 <li className="nav-item ">
-                  <a className="nav-link active" href="http://localhost:3000">
+                  <a
+                    className="nav-link active"
+                    href="https://trade-nova-dashboard.onrender.com"
+                  >
                     Dashboard
                   </a>
                 </li>
